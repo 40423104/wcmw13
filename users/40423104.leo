@@ -20,10 +20,10 @@
 <v t="leo.20160520100934.1"><vh>@edit __init__.py</vh></v>
 <v t="leo.20160520101117.1"><vh>@edit views.py_tutoriall</vh></v>
 <v t="leo.20160520111200.1"><vh>@edit views.py</vh></v>
-</v>
 <v t="leo.20160520110938.1" a="E"><vh>@path templates</vh>
-<v t="leo.20160520111034.1"><vh>@edit index.html</vh></v>
 <v t="leo.20160520111829.1"><vh>@edit base.html</vh></v>
+<v t="leo.20160520111034.1"><vh>@edit index.html</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -37,27 +37,5 @@
 <t tx="leo.20160520101708.1"></t>
 <t tx="leo.20160520101750.1"></t>
 <t tx="leo.20160520110938.1"></t>
-<t tx="leo.20160520111034.1">&lt;html&gt;
-  &lt;head&gt;
-    {% if title %}
-    &lt;title&gt;{{ title }} - microblog&lt;/title&gt;
-    {% else %}
-    &lt;title&gt;Welcome to microblog&lt;/title&gt;
-    {% endif %}
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hi, {{ user.nickname }}!&lt;/h1&gt;
-    {% for post in posts %}
-    &lt;div&gt;&lt;p&gt;{{ post.author.nickname }} says: &lt;b&gt;{{ post.body }}&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
-    {% endfor %}
-  &lt;/body&gt;
-&lt;/html&gt;</t>
-<t tx="leo.20160520111829.1">{% extends "base.html" %}
-{% block content %}
-    &lt;h1&gt;Hi, {{ user.nickname }}!&lt;/h1&gt;
-    {% for post in posts %}
-    &lt;div&gt;&lt;p&gt;{{ post.author.nickname }} says: &lt;b&gt;{{ post.body }}&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;
-    {% endfor %}
-{% endblock %}</t>
 </tnodes>
 </leo_file>
